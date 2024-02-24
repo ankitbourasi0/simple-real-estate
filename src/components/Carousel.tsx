@@ -53,7 +53,7 @@ const Data = [
             <Carousel responsive={responsive} ssr={true}  autoPlay={true} itemClass="px-4"   >
                 {Data.map(data=>
                
-                   <div className="flex items-center max-h-[70vh] w-full justify-center">
+                   <div key={data.image}  className="flex items-center max-h-[70vh] w-full justify-center">
                     <Image
                       unoptimized
                       alt={""}
